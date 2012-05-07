@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+#
+# Use the pfSense web panel to create a new VPN user.
+#
+
 import sys
 
 from ghost import Ghost
@@ -50,7 +54,7 @@ if (len(sys.argv) == 4):
 					# Submit the form
 					page, resources = ghost.fire_on("form", "submit", expect_loading=True)
 					if page.http_status == 200:
-						sys.exit("OK")
+						sys.exit(0)
 					else:
 						print "ERROR: The vpn user could not be created."
 				
