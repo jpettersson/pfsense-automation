@@ -1,0 +1,25 @@
+Hello,
+
+Your VPN account has been created.
+
+Here are the installation instructions for Mac OS:
+
+1. System Preferences -> Network -> + (the plus in the lower left corner)
+2. Interface: "VPN"
+3. VPN Type: "PPTP"
+4. Service Name: Your Majesty NYC
+5. Hit create!
+
+Then:
+
+6. Select the new VPN connection
+7. Server address: "69.38.128.178"
+8. Enter account name: <%= user %>
+9. Choose encryption "Maximum 128 bit only"
+10. Click on Authentication settings
+11. Enter Password: <%= password %>
+12. Click on "Advanced" and select "Send all traffic over VPN connection"
+
+Done!
+
+/J
